@@ -85,7 +85,7 @@ class OrderedSafeLoader(yaml.SafeLoader):
   self.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG, constructMapping)
 
 def getDevices():
- with open(scriptRoot + '/devices.yml', 'r') as f:
+ with open('C://Users//bswaterb//Documents//coding//fwtool.py//devices.yml', 'r') as f:
   return yaml.load(f, OrderedSafeLoader)
 
 
